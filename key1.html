@@ -28,13 +28,36 @@ transform: translate(0, -50%);
             </ul>
         </div>
     </nav>
+
+    <script>
+        document.cookie = "id=1";
+
+        function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "couldnt find cookioe";
+}
+        alert(getCookie("id"));
+        
+        if(getCookie("id") == "1")
+        { } else { window.location.href = "https://dadizzydev.github.io/sentensewebsite/key1"; }
+    </script>
 	
 	<div class="uk-child-width uk-text-center center" style="width: 100%;">
 	<div class="uk-background-secondary uk-light uk-padding uk-panel" style="align: center;">
 	      <p class="uk-h4 uk-light" style="color: white;">Key System</p>
 	      <p class="uk-h5 uk-light" style="color: white;">Nobody likes ads, but it helps supports the developers of Sentense!</p>
 		  
-		  <a class="uk-button uk-button-default" href="https://direct-link.net/124959/sentensekey">Ad 1</a>
+		  <a class="uk-button uk-button-default" href="https://direct-link.net/204691/sentensekey">Ad 1</a>
 		  <hr class="uk-divider-icon">
 		  <p class="uk-h6 uk-light" style="color: white;">Attempting to bypass the key system will result in a blacklist.</p>
 	</div>
