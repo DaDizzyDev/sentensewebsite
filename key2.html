@@ -28,6 +28,29 @@ transform: translate(0, -50%);
             </ul>
         </div>
     </nav>
+
+    <script>
+        document.cookie = "id=1";
+
+        function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "couldnt find cookioe";
+}    
+        document.cookie = "id=1";
+        if(getCookie("id") == "1")
+        { } else { window.location.href = "https://dadizzydev.github.io/sentensewebsite/key1"; }
+        document.cookie = "id=1";
+    </script>
 	
 	<div class="uk-child-width uk-text-center center" style="width: 100%;">
 	<div class="uk-background-secondary uk-light uk-padding uk-panel" style="align: center;">

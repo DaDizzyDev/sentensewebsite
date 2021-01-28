@@ -30,7 +30,7 @@ transform: translate(0, -50%);
     </nav>
 
     <script>
-        document.cookie = "id=2";
+        document.cookie = "id=1";
 
         function getCookie(cname) {
   var name = cname + "=";
@@ -45,9 +45,8 @@ transform: translate(0, -50%);
     }
   }
   return "couldnt find cookioe";
-}
-        alert(getCookie("id"));
-        
+}    
+        document.cookie = "id=1";
         if(getCookie("id") == "1")
         { } else { window.location.href = "https://dadizzydev.github.io/sentensewebsite/key1"; }
     </script>
